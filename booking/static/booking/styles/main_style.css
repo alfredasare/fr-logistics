@@ -1,0 +1,580 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu-icon {
+    color: black;
+    font-size: 30px;
+}
+
+.navbar {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    animation-iteration-count: 3;
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.849);
+    animation-iteration-count: infinite;
+}
+
+.collapse {
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-nav {
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* .nav-item {
+    padding: 5px;
+} */
+
+.cover {
+    background-image: url("../images/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 106px;
+    height: 50vh;
+}
+
+.about-cover {
+    background-image: url("../images/about.real.jpg");
+}
+
+.contact-cover {
+    background-image: url("../images/black-rotary-telephone-on-white-surface-1416530 (1).jpg");
+}
+
+.jumbo {
+    background-color: rgba(7, 7, 7, 0.5);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    width: 70%;
+    padding: 15px;
+    position: absolute;
+    top: calc(25% + 36px);
+    left: calc(50% - 35%);
+}
+
+.jumbo h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.jumbo p {
+    font-size: 12px;
+    color: white;
+    opacity: 0.7;
+}
+
+.learn-more {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.learn-more:hover {
+    color: rgba(7, 7, 7, 0.5);
+}
+
+.belief {
+    text-align: center;
+    margin: 10px auto 0;
+    padding: 20px;
+}
+
+.belief p {
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+.belief h3 {
+    line-height: 1.2em;
+}
+
+.rule {
+    height: 1px;
+    background-color: #eee;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.about {
+    line-height: 2.4em;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.about h4 {
+    font-size: 200%;
+}
+
+.about p {
+    opacity: 0.7;
+    font-weight: 200;
+}
+
+.grid-words2, .grid-words1 {
+    margin-top: 20px;
+}
+
+.services {
+    margin-top: 100px;
+    padding: 5%;
+}
+
+.services h3 {
+    text-align: center;
+}
+
+.service-cols {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.service-cols p {
+    opacity: 0.7;
+    font-weight: 200;
+    padding-top: 20px;
+    line-height: 1.8em;
+}
+
+.jumbotron {
+    width: 100%;
+    text-align: center;
+    padding: 90px 20px;
+    margin: 0;
+}
+
+.jumbotron p {
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.jumbotron button {
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 12px;
+    padding: 30px;
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ************************** ABOUT PAGE **************************************** */
+
+.main-about {
+    line-height: 1.8em;
+}
+
+.about-details {
+    width: 70%;
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 300;
+    opacity: 0.6;
+    line-height: 2em;
+}
+
+.subheading {
+    margin-top: 20px;
+}
+
+.ceo {
+    margin-top: 60px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.ceo h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ceo img {
+    margin-bottom: 20px;
+}
+
+.ceo p {
+    opacity: 0.7;
+    line-height: 1.7em;
+}
+
+/* ************************** CONTACT PAGE **************************************** */
+
+.main-cont {
+    padding: 10px;
+}
+
+.card1 {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.card1 p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.card-left {
+    padding: 20px;
+}
+
+.card2 {
+    text-align: center;
+}
+
+.card2 h6 {
+    text-transform: uppercase;
+}
+
+.card2 p {
+    opacity: 0.6;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.sect {
+    margin-bottom: 40px;
+}
+
+.form {
+    padding: 20px 0px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 10px;
+    margin-left: -10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none !important;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Facebook */
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.clear-opacity {
+    opacity: 1 !important;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-google{
+    color: rgba(255, 0, 0, 0.76);
+}
+
+/* ************************** TERMS AND CONDITIONS **************************************** */
+
+.terms {
+    text-align: center;
+    padding: 10%;
+}
+
+.terms p {
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.terms h5 {
+    text-transform: uppercase;
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ************************** BOOKING PAGE **************************************** */
+
+/* .content {
+    position: relative;
+} */
+
+/* .content:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+} */
+
+.main-sect {
+    border: 1px solid #eee;
+    margin: 156px 1% 50px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+}
+
+.booking-form {
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.radio-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.booking-form span {
+    margin: 20px;
+}
+
+.booking-form p {
+    opacity: 0.6;
+}
+
+.book-image {
+    background-image: url(../images/suitcase.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.6);
+}
+
+.book-image:hover {
+    filter: grayscale(0);
+}
+
+.nav-pills {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-pills a {
+    text-transform: capitalize;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: black;
+}
+
+.my-link {
+    color: black;
+    font-size: 14px;
+}
+
+.my-link:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border: 2px solid black;
+    /* box-shadow: 0 0 10px #eee; */
+}
+
+.booking-form input{
+    margin-bottom: -20px;
+}
+
+@keyframes autofill {
+    0%, 100% {
+        color: #666;
+        background: transparent;
+    }
+}
+@-webkit-keyframes autofill {
+    0%, 100% {
+        color: #666;
+        background: transparent;
+    }
+}
+.select{
+    display: none;
+}
+
+input:-webkit-autofill {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    /* Safari support - any positive time runs instantly */
+    animation-name: autofill;
+    -webkit-animation-name: autofill;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 600px) {
+    .belief h2 {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .jumbo h4 {
+        font-size: 40px;
+    }
+    .jumbo p {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .cover {
+        height: 75vh;
+    }
+    .jumbo {
+        top: calc(37.5vh - 15.5px);
+    }
+    .jumbo h4 {
+        font-size: 50px;
+    }
+    .jumbo p {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .cover {
+        height: calc(75vh - 105.328px);
+    }
+    .jumbo {
+        top: calc(37.5vh - 15.5px);
+    }
+    .jumbo h4 {
+        font-size: 56px;
+    }
+    .jumbo p {
+        font-size: 20px;
+    }
+    .about {
+        text-align: left;
+    }
+    .nav-item {
+        padding: 20px;
+    }
+    .ceo {
+        padding: 50px;
+    }
+    .ceo p {
+        padding-left: 50px;
+    }
+    .terms h5 {
+        margin-top: 30px;
+    }
+    .card2 {
+        text-align: left;
+        margin-left: 70px;
+    }
+    .main-cont {
+        padding: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .cover {
+        height: calc(100vh - 105.328px);
+    }
+    .jumbo {
+        top: calc(50vh - 9px);
+    }
+    .grid-words1 {
+        margin-top: 0;
+        padding-right: 50px;
+    }
+    .grid-words2 {
+        margin-top: 0;
+        padding-left: 50px;
+    }
+    .service-cols {
+        padding-right: 70px;
+        text-align: left;
+    }
+}

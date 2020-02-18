@@ -1,0 +1,22 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-md navbar-light">
+    <a href="{% url 'home' %}" class="navbar-brand"><img src="{% static 'booking/images/FR LOGISTICS 3-01.jpg' %}" alt="logo" width="90px"></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu"><span
+            class="navbar-toggler-icon"></span></button>
+    <div data-toggle="collapse"></div>
+    <div class="ml-lg-5 order-md-last order-0">
+        <a href="{% url 'book' %}">
+            <button class="btn btn-default navbar-btn order-0 animated jello"
+            >Book
+            </button>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="{% url 'terms' %}" class="nav-link">Terms and Conditions</a></li>
+        </ul>
+    </div>
+</nav>

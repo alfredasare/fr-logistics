@@ -1,0 +1,108 @@
+{% extends 'booking/base.html' %}
+
+{% load static %}
+
+{% block body_content %}
+
+    <section class="cover about-cover">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="jumbo">
+                    <h4>About Us</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="belief">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="main-about">We’re a group of meticulous individuals whose <br> sole purpose is to see
+                        your logistics moved <br> and
+                        delivered to your satisfaction</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="rule"></div>
+    <section class="about-details">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium est nobis illo doloribus expedita.
+            Tempore commodi eligendi et fugiat quos molestiae autem, voluptatem tenetur temporibus corporis ut dolor
+            dolores animi?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia numquam officia qui, eaque est mollitia
+            dolores expedita dolorem pariatur, porro doloribus tempora. Reiciendis odio iste iure architecto deserunt
+            facere.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia numquam officia qui, eaque est mollitia
+            dolores expedita dolorem pariatur, porro doloribus tempora. Reiciendis odio iste iure architecto deserunt
+            facere.
+        </p>
+    </section>
+
+    <div class="rule"></div>
+
+    <section class="services" style="margin-top: 50px;">
+        <p style="opacity: 0.6; text-transform: uppercase; font-size: 12px; text-align: center;">what we are best at</p>
+        <h3>Our Values</h3>
+        <div class="container-fluid service-cols">
+            <div class="row" style="text-align: center;">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="{% static 'booking/images/fast-delivery.png' %}" alt="van" width="25%">
+                    <h4 class="subheading">Fast delivery</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime, quos ea quibusdam
+                        ipsum unde molestiae recusandae nesciunt molestias corrupti labore eos quam illum laudantium
+                        necessitatibus eum enim odio magnam.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="{% static 'booking/images/like (1).png' %}" alt="thumbs_up" width="25%">
+                    <h4 class="subheading">Safe & Reliable</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime, quos ea quibusdam
+                        ipsum unde molestiae recusandae nesciunt molestias corrupti labore eos quam illum laudantium
+                        necessitatibus eum enim odio magnam.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="{% static 'booking/images/money (1).png' %}" alt="wallet" width="25%">
+                    <h4 class="subheading">Affordable</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime, quos ea quibusdam
+                        ipsum unde molestiae recusandae nesciunt molestias corrupti labore eos quam illum laudantium
+                        necessitatibus eum enim odio magnam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ceo">
+        <h3>Meet the CEO</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <img src="{% static 'booking/images/DSC_Edward.JPG' %}" alt="ceo_image" width="100%">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <p>
+                        As a sole proprietorship, the company is currently managed by Edward Osei Bonsu. He is a Trainee
+                        Structural Engineer with GNPC-Technip Engineering Services Limited. He Completed Kwame Nkrumah
+                        University of Science and Technology with Honors in BSc. Mechanical Engineering. While on
+                        campus, he held several leadership positions. These included, the Hall Overseer for PENSA-KNUST
+                        and Fundraising Committee Chairman to mention a few.
+                    </p>
+                    <p>
+                        Growing up, he has been in charge of his
+                        father’s shop making him very good and critical about records keeping and being diligent in
+                        business dealings. He aspires to become a well-established entrepreneur with a good number of
+                        thriving businesses.
+                        He looks forward to hiring, as and when needed, people who share similar passion to aid in the
+                        administration of his ventures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'booking/book_jumbotron.html' %}
+
+{% endblock %}
