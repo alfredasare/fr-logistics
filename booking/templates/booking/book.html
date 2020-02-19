@@ -3,166 +3,162 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'booking/styles/tail.select-default.min.css' %}">
+<link rel="stylesheet" href="{% static 'booking/styles/tail.select-default.min.css' %}">
 {% endblock %}
 
 {% block body_content %}
-    <div class="container-fluid">
-        <div class="row main-sect">
-            <div class="col-xs-12 col-sm-12 col-md-0 col-lg-6 content">
-                <div class="booking-form">
-                    <h4>Book FR Logistics</h4>
-                    <p>Want FR Logistics to handle the transport of your luggage? Just fill out this form to book and
-                        one of our representatives will get in touch with you. Thank you</p>
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link my-link active" href="#first" data-toggle="tab">delivery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link my-link" href="#second" data-toggle="tab">safe-keeping</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link my-link" href="#third" data-toggle="tab">warehousing</a>
-                        </li>
-                    </ul>
-                    <div class="rule" style="margin-top: -10px;"></div>
-                    <div class="tab-content">
-                        <form action="" id="first" class="tab-pane show active" novalidate
-                              onsubmit="return validateDelivery()">
-                            <label for="name">name</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name"
-                                   onfocusout="validateName()">
-                            <span></span><br>
-                            <label for="mail">Email Address</label>
-                            <input type="email" name="mail" id="mail" placeholder="Enter your email"
-                                   onfocusout="validateMail()">
-                            <span></span><br>
-                            <label for="contact">Contact</label>
-                            <input type="phone" name="contact" id="contact" placeholder="Enter your contact"
-                                   onfocusout="validateContact()">
-                            <span></span><br>
-                            <label for="from">Location From</label>
-                            <input type="text" name="from" id="from" placeholder="Enter pickup point"
-                                   onfocusout="validateFrom()">
-                            <span></span><br>
-                            <label for="to">Location to</label>
-                            <input type="text" name="to" id="to" placeholder="Enter destination of luggage"
-                                   onfocusout="validateTo()">
-                            <span></span><br>
-                            <p style="text-align: center; margin-bottom: -20px; margin-top: 10px;">Item Section</p>
-                            <div class="rule"></div>
-                            <select name="select" multiple>
-                                <optgroup label="Small Items">
-                                    <option value="">Cylinder</option>
-                                    <option value="">Jute bag</option>
-                                    <option value="">Traveling bag</option>
-                                    <option value="">Student’s mattress</option>
-                                </optgroup>
-                                <optgroup label="Medium Items">
-                                    <option value="">Table top Fridge</option>
-                                    <option value="">Jute bag</option>
-                                    <option value="">Traveling bag</option>
-                                </optgroup>
-                                <optgroup label="Large Items">
-                                    <option value="">Mattress</option>
-                                    <option value="">Traveling bag</option>
-                                </optgroup>
-                                <optgroup label="Delicate Items">
-                                    <option value="">Microwave</option>
-                                    <option value="">Washing machine</option>
-                                </optgroup>
-                            </select> <br>
-                            <label for="others">Other Items</label>
-                            <input type="text" id="others" name="others" placeholder="Enter other items if any">
-                            <span></span><br>
-                            <input type="submit" id="submit" class="btn" style="margin-top: 20px;">
-                        </form>
+<div class="container-fluid">
+    <div class="row main-sect">
+        <div class="col-xs-12 col-sm-12 col-md-0 col-lg-6 content">
+            <div class="booking-form">
+                <h4>Book FR Logistics</h4>
+                <p>Want FR Logistics to handle the transport and or Warehousing of your items? Just fill out this form
+                    to book and one of our representatives will get in touch with you. Thank you.</p>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link my-link active" href="#first" data-toggle="tab">delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-link" href="#second" data-toggle="tab">safe-keeping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-link" href="#third" data-toggle="tab">warehousing</a>
+                    </li>
+                </ul>
+                <div class="rule" style="margin-top: -10px;"></div>
+                <div class="tab-content">
+                    <form action="" id="first" class="tab-pane show active" novalidate
+                          onsubmit="return validateDelivery()">
+                        <label for="name">name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name"
+                               onfocusout="validateName()">
+                        <span></span><br>
+                        <label for="mail">Email Address</label>
+                        <input type="email" name="mail" id="mail" placeholder="Enter your email"
+                               onfocusout="validateMail()">
+                        <span></span><br>
+                        <label for="contact">Contact</label>
+                        <input type="phone" name="contact" id="contact" placeholder="Enter your contact"
+                               onfocusout="validateContact()">
+                        <span></span><br>
+                        <label for="from">Location From</label>
+                        <input type="text" name="from" id="from" placeholder="Enter GPS address of pickup point"
+                               onfocusout="validateFrom()">
+                        <span></span><br>
+                        <label for="to">Location to</label>
+                        <input type="text" name="to" id="to" placeholder="Enter GPS address of destination"
+                               onfocusout="validateTo()">
+                        <span></span><br>
+                        <p style="text-align: center; margin-bottom: -20px; margin-top: 10px;">Item Section</p>
+                        <div class="rule"></div>
+                        <select name="select" multiple>
+                            <optgroup label="Small Items">
+                                <option value="">Cylinder</option>
+                                <option value="">Jute bag</option>
+                                <option value="">Traveling bag</option>
+                                <option value="">Student’s mattress</option>
+                            </optgroup>
+                            <optgroup label="Medium Items">
+                                <option value="">Table top Fridge</option>
+                                <option value="">Jute bag</option>
+                                <option value="">Traveling bag</option>
+                            </optgroup>
+                            <optgroup label="Large Items">
+                                <option value="">Mattress</option>
+                                <option value="">Traveling bag</option>
+                            </optgroup>
+                            <optgroup label="Delicate Items">
+                                <option value="">Microwave</option>
+                                <option value="">Washing machine</option>
+                            </optgroup>
+                        </select> <br>
+                        <label for="others">Other Items</label>
+                        <input type="text" id="others" name="others" placeholder="Enter other items if any">
+                        <span></span><br>
+                        <input type="submit" id="submit" class="btn" style="margin-top: 20px;">
+                    </form>
 
-                        <form action="" id="second" class="tab-pane" novalidate onsubmit="return validateSafekeeping()">
-                            <label for="name">Student's name</label>
-                            <input type="text" name="name2" id="name2" placeholder="Enter your name"
-                                   onfocusout="validateName2()">
-                            <span></span><br>
-                            <label for="mail">Email Address</label>
-                            <input type="email" name="mail2" id="mail2" placeholder="Enter your email"
-                                   onfocusout="validateMail2()">
-                            <span></span><br>
-                            <label for="contact">Contact</label>
-                            <input type="phone" name="contact2" id="contact2" placeholder="Enter your contact"
-                                   onfocusout="validateContact2()">
-                            <span></span><br>
-                            <label for="from">Name of school</label>
-                            <input type="text" name="school" id="school" placeholder="Enter school's name"
-                                   onfocusout="validateSchool()">
-                            <span></span><br>
-                            <label for="to">Name of hall or hostel</label>
-                            <input type="text" name="hall" id="hall" placeholder="Enter pickup point"
-                                   onfocusout="validateHall()">
-                            <span></span><br>
-                            <p style="text-align: center; margin-bottom: -20px; margin-top: 10px;">Item Section</p>
-                            <div class="rule"></div>
-                            <select name="select" multiple>
-                                <optgroup label="Small Items">
-                                    <option value="">Cylinder</option>
-                                    <option value="">Jute bag</option>
-                                    <option value="">Traveling bag</option>
-                                    <option value="">Student’s mattress</option>
-                                </optgroup>
-                                <optgroup label="Medium Items">
-                                    <option value="">Table top Fridge</option>
-                                    <option value="">Jute bag</option>
-                                    <option value="">Traveling bag</option>
-                                </optgroup>
-                                <optgroup label="Large Items">
-                                    <option value="">Mattress</option>
-                                    <option value="">Traveling bag</option>
-                                </optgroup>
-                                <optgroup label="Delicate Items">
-                                    <option value="">Microwave</option>
-                                    <option value="">Washing machine</option>
-                                </optgroup>
-                            </select> <br>
-                            <label for="others">Other Items</label>
-                            <input type="text" id="others" name="others" placeholder="Enter other items if any">
-                            <span></span><br>
-                            <input type="submit" id="submit" class="btn" style="margin-top: 20px;">
-                        </form>
+                    <form action="" id="second" class="tab-pane" novalidate onsubmit="return validateSafekeeping()">
+                        <label for="name">Name</label>
+                        <input type="text" name="name2" id="name2" placeholder="Enter your name"
+                               onfocusout="validateName2()">
+                        <span></span><br>
+                        <label for="mail">Email Address</label>
+                        <input type="email" name="mail2" id="mail2" placeholder="Enter your email"
+                               onfocusout="validateMail2()">
+                        <span></span><br>
+                        <label for="contact">Contact</label>
+                        <input type="phone" name="contact2" id="contact2" placeholder="Enter your contact"
+                               onfocusout="validateContact2()">
+                        <span></span><br>
+                        <label for="to">Location from</label>
+                        <input type="text" name="hall" id="hall" placeholder="Enter GPS address of pickup point"
+                               onfocusout="validateHall()">
+                        <span></span><br>
+                        <p style="text-align: center; margin-bottom: -20px; margin-top: 10px;">Item Section</p>
+                        <div class="rule"></div>
+                        <select name="select" multiple>
+                            <optgroup label="Small Items">
+                                <option value="">Cylinder</option>
+                                <option value="">Jute bag</option>
+                                <option value="">Traveling bag</option>
+                                <option value="">Student’s mattress</option>
+                            </optgroup>
+                            <optgroup label="Medium Items">
+                                <option value="">Table top Fridge</option>
+                                <option value="">Jute bag</option>
+                                <option value="">Traveling bag</option>
+                            </optgroup>
+                            <optgroup label="Large Items">
+                                <option value="">Mattress</option>
+                                <option value="">Traveling bag</option>
+                            </optgroup>
+                            <optgroup label="Delicate Items">
+                                <option value="">Microwave</option>
+                                <option value="">Washing machine</option>
+                            </optgroup>
+                        </select> <br>
+                        <label for="others">Other Items</label>
+                        <input type="text" id="others2" name="others" placeholder="Enter other items if any">
+                        <span></span><br>
+                        <input type="submit" id="submit2" class="btn" style="margin-top: 20px;">
+                    </form>
 
-                        <form action="" id="third" class="tab-pane" novalidate onsubmit="return validateWarehousing()">
-                            <label for="name">Name</label>
-                            <input type="text" name="name3" id="name3" placeholder="Enter your name"
-                                   onfocusout="validateName3()">
-                            <span></span><br>
-                            <label for="name">Name of business</label>
-                            <input type="text" name="business" id="business" placeholder="Enter name of business"
-                                   onfocusout="validateBusiness()">
-                            <span></span><br>
-                            <label for="mail">Email Address</label>
-                            <input type="email" name="mail3" id="mail3" placeholder="Enter your email"
-                                   onfocusout="validateMail3()">
-                            <span></span><br>
-                            <label for="contact">Contact</label>
-                            <input type="phone" name="contact3" id="contact3" placeholder="Enter your contact"
-                                   onfocusout="validateContact3()">
-                            <span></span><br>
-                            <label for="from">Location from</label>
-                            <input type="text" name="from3" id="from3" placeholder="Enter pickup point"
-                                   onfocusout="validateFrom3()">
-                            <span></span><br>
-                            <input type="submit" id="submit" class="btn" style="margin-top: 20px;">
-                        </form>
-                    </div>
+                    <form action="" id="third" class="tab-pane" novalidate onsubmit="return validateWarehousing()">
+                        <label for="name">Name</label>
+                        <input type="text" name="name3" id="name3" placeholder="Enter your name"
+                               onfocusout="validateName3()">
+                        <span></span><br>
+                        <label for="name">Name of business</label>
+                        <input type="text" name="business" id="business" placeholder="Enter name of business"
+                               onfocusout="validateBusiness()">
+                        <span></span><br>
+                        <label for="mail">Email Address</label>
+                        <input type="email" name="mail3" id="mail3" placeholder="Enter your email"
+                               onfocusout="validateMail3()">
+                        <span></span><br>
+                        <label for="contact">Contact</label>
+                        <input type="phone" name="contact3" id="contact3" placeholder="Enter your contact"
+                               onfocusout="validateContact3()">
+                        <span></span><br>
+                        <label for="from">Location from</label>
+                        <input type="text" name="from3" id="from3" placeholder="Enter GPS address of pickup point"
+                               onfocusout="validateFrom3()">
+                        <span></span><br>
+                        <input type="submit" id="submit3" class="btn" style="margin-top: 20px;">
+                    </form>
                 </div>
             </div>
-            <div class="col-xs-0 col-sm-0 col-md-0 col-lg-6 book-image">
-            </div>
         </div>
-
+        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-6 book-image">
+        </div>
     </div>
+
+</div>
 
 {% endblock %}
 
 {% block extra_js %}
-    <script src="{% static 'booking/scripts/tail.js' %}"></script>
-    <script src="{% static 'booking/scripts/book_validation.js' %}"></script>
+<script src="{% static 'booking/scripts/tail.js' %}"></script>
+<script src="{% static 'booking/scripts/book_validation.js' %}"></script>
 {% endblock %}
