@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block body_content %}
-<section class="cover contact-cover">
+    <section class="cover contact-cover">
         <div class="container-fluid">
             <div class="row">
                 <div class="jumbo">
@@ -17,19 +17,29 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 card-left card1">
                 <h4>Contact Us</h4>
                 <p>Have any questions? Do not hesitate to contact us. <br> We are always ready to help.</p>
-                <form action="" class="form" novalidate onsubmit="return validateContactPage()">
-                    <label for="name">Name</label> <br>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" onfocusout="validateName()">
-                    <span></span><br>
-                    <label for="mail">Email Address</label><br>
-                    <input type="email" name="mail" id="mail" placeholder="Enter your email" onfocusout="validateMail()">
-                    <span></span><br>
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Hi there, I'm reaching out because I think we can collaborate... " onfocusout="validateMessage()"></textarea>
-                        <span></span><br>
-                    <input type="submit" class="btn" style="margin-top: 20px;">
+
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="form-actions">
+                        <button type="submit">Send</button>
+                    </div>
                 </form>
+
+
+                {#                <form method="POST" class="form" novalidate onsubmit="return validateContactPage()">#}
+                {#                    <label for="name">Name</label> <br>#}
+                {#                    <input type="text" name="name" id="name" placeholder="Enter your name" onfocusout="validateName()">#}
+                {#                    <span></span><br>#}
+                {#                    <label for="mail">Email Address</label><br>#}
+                {#                    <input type="email" name="mail" id="mail" placeholder="Enter your email" onfocusout="validateMail()">#}
+                {#                    <span></span><br>#}
+                {#                    <label for="message">Message</label><br>#}
+                {#                    <textarea name="message" id="message" cols="30" rows="10"#}
+                {#                        placeholder="Hi there, I'm reaching out because I think we can collaborate... " onfocusout="validateMessage()"></textarea>#}
+                {#                        <span></span><br>#}
+                {#                    <input type="submit" class="btn" style="margin-top: 20px;">#}
+                {#                </form>#}
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 card2">
                 <div class="sect">
@@ -53,20 +63,18 @@
                     <span><a href="#" class="fa fa-facebook"></a></span>
                     <span><a href="https://twitter.com/_FRLogistics" class="fa fa-twitter" target="_blank"></a></span>
                     <span><a href="https://www.instagram.com/fr_logistics4u/?hl=en" class="fa fa-instagram"
-                            target="_blank"></a></span>
+                             target="_blank"></a></span>
                     <span><a href="mailto:frlogistics0@gmail.com" class="fa fa-google" target="_blank"></a></span>
                 </div>
-
             </div>
 
         </div>
     </div>
-    </section>
 
 
     {% include 'booking/book_jumbotron.html' %}
 {% endblock %}
 
 {% block extra_js %}
-<script src="{% static 'booking/scripts/contact_validation.js' %}"></script>
+    <script src="{% static 'booking/scripts/contact_validation.js' %}"></script>
 {% endblock %}
