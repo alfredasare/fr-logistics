@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls %}
+
+
+{% block title %}{{ title }} | {{ site_title|default:_('FR Logistics Admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">FR Logistics Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<a style="color: white;" href="{% url 'export_delivery_data' %}">Export Delivery Data</a>
+<a style="color: white;" href="{% url 'export_safekeeping_data' %}">Export Safekeeping Data</a>
+<a style="color: white;" href="{% url 'export_warehouse_data' %}">Export Warehouse Data</a>
+{% endblock %}

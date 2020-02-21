@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import DeliveryModel, SafeKeepingModel, WarehousingModel
 
-# Register your models here.
+admin.site.register(DeliveryModel)
+admin.site.register(SafeKeepingModel)
+admin.site.register(WarehousingModel)

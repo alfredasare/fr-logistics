@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'booking/styles/animate.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'booking/styles/main_style.css' %}">
+    <link rel="stylesheet" href="{% static 'booking/styles/oops.css' %}">
+    <title>{{ title }}</title>
+</head>
+
+{% block body_content %}
+<section class="main-oops">
+    <div class="sub-section">
+        <img src="{% static 'booking/images/broken-package.png' %}" alt="404_image" height="60%">
+        <div class="text-area">
+            <h3>Oops...</h3>
+            <br>
+            <h5>Something went wrong</h5>
+        </div>
+    </div>
+    <a href="{% url 'home' %}"><button class="btn btn-default">back to safety</button></a>
+</section>
+{% endblock %}
+
+{% include 'booking/footer.html' %}
+</html>

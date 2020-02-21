@@ -1,0 +1,35 @@
+.main-oops{
+    width: 100%;
+    height: calc(100vh - 78px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sub-section{
+    display: flex;
+    width: 75vw;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.sub-section  h5{
+    opacity: 0.7;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.text-area {
+    margin-left: 20px;
+}
+
+.btn{
+display: block;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}

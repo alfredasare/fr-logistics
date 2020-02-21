@@ -1,0 +1,58 @@
+.main-confirm{
+    margin-top: 106px;
+    padding: 60px 0;
+    height: calc(100vh - 184px);
+    width: 100vw;
+}
+.main-confirm > h3{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: large;
+    text-align: center;
+}
+.confirm-card{
+    position: relative;
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(186, 186, 186, 0.11);
+}
+.confirm-card h3{
+    text-transform: uppercase;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-confirm p{
+    text-align: center;
+    opacity: 0.6;
+}
+.paper-plane{
+    position: absolute;
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+}
+.circle{
+    position: absolute;
+    top: -15px;
+    left: calc(100% - 15px);
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.circle:hover{
+    background: #eee;
+}
+.fa-close{
+    margin-top: -12px;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background: transparent !important;
+}

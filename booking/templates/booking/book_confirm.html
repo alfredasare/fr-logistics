@@ -1,0 +1,33 @@
+{% extends 'booking/base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'booking/styles/confirm.css' %}">
+{% endblock %}
+
+{% block body_content %}
+<section class="main-confirm">
+    <h3>Confirmation Message</h3>
+    <div class="container-fluid" style="padding: 15px 40px">
+        <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 confirm-card">
+                <div class="circle animated bounceIn delay-3s">
+                    <a href="{% url 'book' %}" class="fa fa-close"></a>
+                </div>
+                <h3>Sent!</h3>
+                <p>
+                    Your booking has been completed successfully
+                </p>
+                <p style="opacity: 1; font-weight: bold; color: #14ceac">
+                    A price quote will be sent to you by the end of the day to your mail
+                </p>
+                <p style="opacity: 1"> <strong> Thank you for booking FR Logistics </strong></p>
+                <img src="{% static 'booking/images/paper-plane.png' %}" alt="paper-plane" width="60px"
+                     class="paper-plane animated fadeInLeft delay-1s">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

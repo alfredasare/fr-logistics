@@ -5,6 +5,16 @@ body {
     letter-spacing: 1px;
 }
 
+::-moz-selection {
+    color: white;
+    background: black
+}
+
+::selection {
+    color: white;
+    background: black
+}
+
 .menu-icon {
     color: black;
     font-size: 30px;
@@ -341,7 +351,8 @@ textarea {
     background-clip: text;
     -webkit-background-clip: text;
 }
-.fa-google{
+
+.fa-google {
     color: rgba(255, 0, 0, 0.76);
 }
 
@@ -353,7 +364,7 @@ textarea {
 }
 
 .terms p {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -364,6 +375,10 @@ textarea {
     margin-top: 90px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.terms span {
+    color: black;
 }
 
 /* ************************** BOOKING PAGE **************************************** */
@@ -433,7 +448,7 @@ textarea {
     text-transform: capitalize;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: black;
 }
 
@@ -453,7 +468,7 @@ input:focus, textarea:focus {
     /* box-shadow: 0 0 10px #eee; */
 }
 
-.booking-form input{
+.booking-form input {
     margin-bottom: -20px;
 }
 
@@ -463,13 +478,15 @@ input:focus, textarea:focus {
         background: transparent;
     }
 }
+
 @-webkit-keyframes autofill {
     0%, 100% {
         color: #666;
         background: transparent;
     }
 }
-.select{
+
+.select {
     display: none;
 }
 
@@ -495,6 +512,7 @@ input:-webkit-autofill {
     .jumbo h4 {
         font-size: 40px;
     }
+
     .jumbo p {
         font-size: 14px;
     }
@@ -506,12 +524,15 @@ input:-webkit-autofill {
     .cover {
         height: 75vh;
     }
+
     .jumbo {
         top: calc(37.5vh - 15.5px);
     }
+
     .jumbo h4 {
         font-size: 50px;
     }
+
     .jumbo p {
         font-size: 16px;
     }
@@ -523,34 +544,44 @@ input:-webkit-autofill {
     .cover {
         height: calc(75vh - 105.328px);
     }
+
     .jumbo {
         top: calc(37.5vh - 15.5px);
     }
+
     .jumbo h4 {
         font-size: 56px;
     }
+
     .jumbo p {
         font-size: 20px;
     }
+
     .about {
         text-align: left;
     }
+
     .nav-item {
         padding: 20px;
     }
+
     .ceo {
         padding: 50px;
     }
+
     .ceo p {
         padding-left: 50px;
     }
+
     .terms h5 {
         margin-top: 30px;
     }
+
     .card2 {
         text-align: left;
         margin-left: 70px;
     }
+
     .main-cont {
         padding: 50px;
     }
@@ -562,17 +593,21 @@ input:-webkit-autofill {
     .cover {
         height: calc(100vh - 105.328px);
     }
+
     .jumbo {
         top: calc(50vh - 9px);
     }
+
     .grid-words1 {
         margin-top: 0;
         padding-right: 50px;
     }
+
     .grid-words2 {
         margin-top: 0;
         padding-left: 50px;
     }
+
     .service-cols {
         padding-right: 70px;
         text-align: left;
